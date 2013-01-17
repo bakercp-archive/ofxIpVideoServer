@@ -43,8 +43,6 @@ class testApp : public ofBaseApp {
     ofxIpVideoServer* server;
     ofxIpVideoServerRoute* videoRoute;
     
-    ofImage             image;
     ofVideoPlayer 		video;
-    ofVideoGrabber      grabber;
 
 };

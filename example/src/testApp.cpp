@@ -32,15 +32,13 @@ testApp::~testApp() {
 }
 
 //--------------------------------------------------------------
-void testApp::setup(){
-//    signal(SIGPIPE, SIG_IGN);
+void testApp::setup() {
     
     ofSetFrameRate(30);
     ofSetLogLevel(OF_LOG_VERBOSE);
-    
-//    grabber.initGrabber(320,240);
-
-    
+        
+    video.loadMovie("DocumentRoot/fingers.mov");
+    video.play();
     
     ofxIpVideoServer::Settings settings;
 
@@ -51,31 +49,32 @@ void testApp::setup(){
 
     server->addRoute(ofHttpServerDefaultRoute::Instance());
     server->addRoute(ofHttpServerUploadRoute::Instance());
-    
-    videoRoute = ofxIpVideoServerRoute::Instance();
 
+    ofxIpVideoServerRouteHandler::Settings videoRouteSettings;
+    settings.route.path = "/video";
+    
+    videoRoute = ofxIpVideoServerRoute::Instance(videoRouteSettings);
     server->addRoute(videoRoute);
 
     server->start();
 
     ofLaunchBrowser(server->getURL());
+    ofLaunchBrowser(server->getURL() + "video");
 }
 
 //--------------------------------------------------------------
 void testApp::update() {
-//    grabber
-//    grabber.update();
+    video.update();
 
-//    if(grabber.isFrameNew()) {
-//        videoRoute->pushFrame(grabber.getPixelsRef());
-//    }
+    if(video.isFrameNew()) {
+        videoRoute->pushFrame(video.getPixelsRef());
+    }
     
 }
 
 //--------------------------------------------------------------
 void testApp::draw() {
-    grabber.draw(0,0);
-    
+    video.draw(0,0);
 }
 
 
