@@ -38,7 +38,7 @@ void testApp::setup(){
     ofSetFrameRate(30);
     ofSetLogLevel(OF_LOG_VERBOSE);
     
-    grabber.initGrabber(320,240);
+//    grabber.initGrabber(320,240);
 
     
     
@@ -64,11 +64,11 @@ void testApp::setup(){
 //--------------------------------------------------------------
 void testApp::update() {
 //    grabber
-    grabber.update();
+//    grabber.update();
 
-    if(grabber.isFrameNew()) {
+//    if(grabber.isFrameNew()) {
 //        videoRoute->pushFrame(grabber.getPixelsRef());
-    }
+//    }
     
 }
 
