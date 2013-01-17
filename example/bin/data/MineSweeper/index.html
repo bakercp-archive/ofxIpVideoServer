@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+<head>
+	<title>Minesweeper Canvas</title>
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" media="screen" type="text/css" href="css/styles.css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,700' rel='stylesheet' type='text/css'>
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	
+	<script type="text/javascript" src="js/minesweeper.js"></script>
+</head>
+
+<body>
+	<a href="https://github.com/Joeynoh/HTML5-Minesweeper"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+
+	<div class="container">
+		<header class="row">
+			<div class="sixcol">
+			<h1>HTML5 Minesweeper</h1>
+			</div>
+			<div class="sixcol last">
+				
+			</div>
+		</header>
+		<section class="row">
+			<div class="eightcol">
+				<canvas id="board" width="600" height="400" oncontextmenu="return false;">
+					<p>Unfortunately, your browser does not seem to support the canvas element.</p>
+				</canvas>
+			
+				<noscript>
+					<p>Unfortunately, your javascript is disabled. You will need to enable it in order to play the game.</p>
+				</noscript>
+			</div>
+			<div class="fourcol last">
+				<div class="startscreen">
+					<h1>Start Game</h1>
+					<p>Please choose a difficulty to get started.</p>
+					<button id="easybtn">Easy</button>
+					<button id="mediumbtn">Medium</button>
+					<button id="insanebtn">Insane</button>
+				
+					
+					<h1>Games You Won</h1>
+					<table id="scoreboard">
+						<tr>
+							<th>Name</th>
+							<th>Mines</th>
+							<th>Seconds</th>
+						</tr>
+					</table>
+					
+				</div>
+				
+				<div class="gamescreen">
+					<h1 id="status">Game on :)</h1>
+					<p id="msg">Click on a square to start the game!</p>
+					<button id="reset">Reset</button>
+					<button id="switchscreens">Change Difficulty</button>
+					<br>
+					<p><span id="time">0</span> seconds have passed</p>
+					<span id="mines"></span>
+					<span id="flags"></span>
+				</div>
+			</div>
+		</section>
+		<footer class="row">
+			<div class="threecol">
+				<a href="http://www.w3.org/html/logo/">
+<img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-graphics-semantics-storage.png" width="229" height="64" alt="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, Semantics, and Offline &amp; Storage" title="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, Semantics, and Offline &amp; Storage">
+</a>
+			</div>
+			<div class="fourcol">
+				<a href="https://github.com/Joeynoh/HTML5-Minesweeper" class="git">
+					<img src="images/git.jpg" width="48" height="48" alt="Open Source HTML5 Minesweeper game">
+					Follow this project on Github!
+				</a>
+			</div>
+			<div class="fivecol last">
+				<p class="desc">
+					This project was started to get more comfortable with HTML5's canvas, but quickly turned into an attempt to modernize Minesweeper and add as many features as possible.
+				</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
