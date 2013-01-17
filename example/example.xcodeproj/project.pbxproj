@@ -27,24 +27,24 @@
 		E7E077E515D3B63C0020DFD4 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */; };
 		E7E077E815D3B6510020DFD4 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E715D3B6510020DFD4 /* QTKit.framework */; };
 		E7F985F815E0DEA3003869B5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F985F515E0DE99003869B5 /* Accelerate.framework */; };
-		FD4B8DD816A47366002F415D /* ofEnvironmentUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD4B8DC116A47366002F415D /* ofEnvironmentUtils.cpp */; };
-		FD4B8DD916A47366002F415D /* ofHttpServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD4B8DC316A47366002F415D /* ofHttpServer.cpp */; };
-		FD4B8DDA16A47366002F415D /* ofHttpServerBaseRouteHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD4B8DC616A47366002F415D /* ofHttpServerBaseRouteHandler.cpp */; };
-		FD4B8DDB16A47366002F415D /* ofHttpServerDefaultRoute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD4B8DC816A47366002F415D /* ofHttpServerDefaultRoute.cpp */; };
-		FD4B8DDC16A47366002F415D /* ofHttpServerDefaultRouteHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD4B8DCA16A47366002F415D /* ofHttpServerDefaultRouteHandler.cpp */; };
-		FD4B8DDD16A47366002F415D /* ofHttpServerFailedRouteHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD4B8DCC16A47366002F415D /* ofHttpServerFailedRouteHandler.cpp */; };
-		FD4B8DDE16A47366002F415D /* ofHttpServerRouteManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD4B8DCF16A47366002F415D /* ofHttpServerRouteManager.cpp */; };
-		FD4B8DDF16A47366002F415D /* ofHttpServerUploadRoute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD4B8DD116A47366002F415D /* ofHttpServerUploadRoute.cpp */; };
-		FD4B8DE016A47366002F415D /* ofHttpServerUploadRouteHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD4B8DD316A47366002F415D /* ofHttpServerUploadRouteHandler.cpp */; };
-		FD4B8DE116A47366002F415D /* ofNetworkUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD4B8DD516A47366002F415D /* ofNetworkUtils.cpp */; };
-		FDCA5C3016A7283E0052C652 /* ofHttpServerSessionManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDCA5C2E16A7283E0052C652 /* ofHttpServerSessionManager.cpp */; };
-		FDCA5C3316A750A10052C652 /* ofCryptoUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDCA5C3116A750A00052C652 /* ofCryptoUtils.cpp */; };
-		FDCA5C3616A753F20052C652 /* ofHttpUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDCA5C3416A753F10052C652 /* ofHttpUtils.cpp */; };
-		FDCA5C4616A7834C0052C652 /* ofxIpVideoServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDCA5C3D16A783450052C652 /* ofxIpVideoServer.cpp */; };
-		FDCA5C4716A7834C0052C652 /* ofxIpVideoServerFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDCA5C3F16A783460052C652 /* ofxIpVideoServerFrame.cpp */; };
-		FDCA5C4816A7834C0052C652 /* ofxIpVideoServerFrameQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDCA5C4016A783460052C652 /* ofxIpVideoServerFrameQueue.cpp */; };
-		FDCA5C4916A7834C0052C652 /* ofxIpVideoServerRoute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDCA5C4216A783480052C652 /* ofxIpVideoServerRoute.cpp */; };
-		FDCA5C4A16A7834C0052C652 /* ofxIpVideoServerRouteHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDCA5C4416A7834B0052C652 /* ofxIpVideoServerRouteHandler.cpp */; };
+		FDA1F8FD16A8C49800968B04 /* ofCryptoUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDA1F8D616A8C49800968B04 /* ofCryptoUtils.cpp */; };
+		FDA1F8FE16A8C49800968B04 /* ofEnvironmentUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDA1F8D816A8C49800968B04 /* ofEnvironmentUtils.cpp */; };
+		FDA1F8FF16A8C49800968B04 /* ofHttpServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDA1F8DA16A8C49800968B04 /* ofHttpServer.cpp */; };
+		FDA1F90016A8C49800968B04 /* ofHttpServerBaseRouteHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDA1F8DD16A8C49800968B04 /* ofHttpServerBaseRouteHandler.cpp */; };
+		FDA1F90116A8C49800968B04 /* ofHttpServerDefaultRoute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDA1F8DF16A8C49800968B04 /* ofHttpServerDefaultRoute.cpp */; };
+		FDA1F90216A8C49800968B04 /* ofHttpServerDefaultRouteHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDA1F8E116A8C49800968B04 /* ofHttpServerDefaultRouteHandler.cpp */; };
+		FDA1F90316A8C49800968B04 /* ofHttpServerFailedRouteHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDA1F8E316A8C49800968B04 /* ofHttpServerFailedRouteHandler.cpp */; };
+		FDA1F90416A8C49800968B04 /* ofHttpServerRouteManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDA1F8E616A8C49800968B04 /* ofHttpServerRouteManager.cpp */; };
+		FDA1F90516A8C49800968B04 /* ofHttpServerSessionManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDA1F8E816A8C49800968B04 /* ofHttpServerSessionManager.cpp */; };
+		FDA1F90616A8C49800968B04 /* ofHttpServerUploadRoute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDA1F8EA16A8C49800968B04 /* ofHttpServerUploadRoute.cpp */; };
+		FDA1F90716A8C49800968B04 /* ofHttpServerUploadRouteHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDA1F8EC16A8C49800968B04 /* ofHttpServerUploadRouteHandler.cpp */; };
+		FDA1F90816A8C49800968B04 /* ofHttpUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDA1F8EE16A8C49800968B04 /* ofHttpUtils.cpp */; };
+		FDA1F90916A8C49800968B04 /* ofNetworkUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDA1F8F016A8C49800968B04 /* ofNetworkUtils.cpp */; };
+		FDA1F90A16A8C49800968B04 /* ofxIpVideoServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDA1F8F316A8C49800968B04 /* ofxIpVideoServer.cpp */; };
+		FDA1F90B16A8C49800968B04 /* ofxIpVideoServerFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDA1F8F516A8C49800968B04 /* ofxIpVideoServerFrame.cpp */; };
+		FDA1F90C16A8C49800968B04 /* ofxIpVideoServerFrameQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDA1F8F716A8C49800968B04 /* ofxIpVideoServerFrameQueue.cpp */; };
+		FDA1F90D16A8C49800968B04 /* ofxIpVideoServerRoute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDA1F8F916A8C49800968B04 /* ofxIpVideoServerRoute.cpp */; };
+		FDA1F90E16A8C49800968B04 /* ofxIpVideoServerRouteHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDA1F8FB16A8C49800968B04 /* ofxIpVideoServerRouteHandler.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,45 +102,45 @@
 		E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		E7E077E715D3B6510020DFD4 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		E7F985F515E0DE99003869B5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
-		FD4B8DC116A47366002F415D /* ofEnvironmentUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofEnvironmentUtils.cpp; sourceTree = "<group>"; };
-		FD4B8DC216A47366002F415D /* ofEnvironmentUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofEnvironmentUtils.h; sourceTree = "<group>"; };
-		FD4B8DC316A47366002F415D /* ofHttpServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofHttpServer.cpp; sourceTree = "<group>"; };
-		FD4B8DC416A47366002F415D /* ofHttpServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofHttpServer.h; sourceTree = "<group>"; };
-		FD4B8DC516A47366002F415D /* ofHttpServerBaseRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofHttpServerBaseRoute.h; sourceTree = "<group>"; };
-		FD4B8DC616A47366002F415D /* ofHttpServerBaseRouteHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofHttpServerBaseRouteHandler.cpp; sourceTree = "<group>"; };
-		FD4B8DC716A47366002F415D /* ofHttpServerBaseRouteHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofHttpServerBaseRouteHandler.h; sourceTree = "<group>"; };
-		FD4B8DC816A47366002F415D /* ofHttpServerDefaultRoute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofHttpServerDefaultRoute.cpp; sourceTree = "<group>"; };
-		FD4B8DC916A47366002F415D /* ofHttpServerDefaultRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofHttpServerDefaultRoute.h; sourceTree = "<group>"; };
-		FD4B8DCA16A47366002F415D /* ofHttpServerDefaultRouteHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofHttpServerDefaultRouteHandler.cpp; sourceTree = "<group>"; };
-		FD4B8DCB16A47366002F415D /* ofHttpServerDefaultRouteHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofHttpServerDefaultRouteHandler.h; sourceTree = "<group>"; };
-		FD4B8DCC16A47366002F415D /* ofHttpServerFailedRouteHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofHttpServerFailedRouteHandler.cpp; sourceTree = "<group>"; };
-		FD4B8DCD16A47366002F415D /* ofHttpServerFailedRouteHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofHttpServerFailedRouteHandler.h; sourceTree = "<group>"; };
-		FD4B8DCE16A47366002F415D /* ofHttpServerMimeTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofHttpServerMimeTypes.h; sourceTree = "<group>"; };
-		FD4B8DCF16A47366002F415D /* ofHttpServerRouteManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofHttpServerRouteManager.cpp; sourceTree = "<group>"; };
-		FD4B8DD016A47366002F415D /* ofHttpServerRouteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofHttpServerRouteManager.h; sourceTree = "<group>"; };
-		FD4B8DD116A47366002F415D /* ofHttpServerUploadRoute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofHttpServerUploadRoute.cpp; sourceTree = "<group>"; };
-		FD4B8DD216A47366002F415D /* ofHttpServerUploadRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofHttpServerUploadRoute.h; sourceTree = "<group>"; };
-		FD4B8DD316A47366002F415D /* ofHttpServerUploadRouteHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofHttpServerUploadRouteHandler.cpp; sourceTree = "<group>"; };
-		FD4B8DD416A47366002F415D /* ofHttpServerUploadRouteHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofHttpServerUploadRouteHandler.h; sourceTree = "<group>"; };
-		FD4B8DD516A47366002F415D /* ofNetworkUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofNetworkUtils.cpp; sourceTree = "<group>"; };
-		FD4B8DD616A47366002F415D /* ofNetworkUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofNetworkUtils.h; sourceTree = "<group>"; };
-		FD4B8DD716A47366002F415D /* ofThreadErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofThreadErrorHandler.h; sourceTree = "<group>"; };
-		FDCA5C2E16A7283E0052C652 /* ofHttpServerSessionManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofHttpServerSessionManager.cpp; sourceTree = "<group>"; };
-		FDCA5C2F16A7283E0052C652 /* ofHttpServerSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofHttpServerSessionManager.h; sourceTree = "<group>"; };
-		FDCA5C3116A750A00052C652 /* ofCryptoUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofCryptoUtils.cpp; sourceTree = "<group>"; };
-		FDCA5C3216A750A10052C652 /* ofCryptoUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofCryptoUtils.h; sourceTree = "<group>"; };
-		FDCA5C3416A753F10052C652 /* ofHttpUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofHttpUtils.cpp; sourceTree = "<group>"; };
-		FDCA5C3516A753F20052C652 /* ofHttpUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofHttpUtils.h; sourceTree = "<group>"; };
-		FDCA5C3D16A783450052C652 /* ofxIpVideoServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxIpVideoServer.cpp; path = ../src/ofxIpVideoServer.cpp; sourceTree = "<group>"; };
-		FDCA5C3E16A783450052C652 /* ofxIpVideoServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxIpVideoServer.h; path = ../src/ofxIpVideoServer.h; sourceTree = "<group>"; };
-		FDCA5C3F16A783460052C652 /* ofxIpVideoServerFrame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxIpVideoServerFrame.cpp; path = ../src/ofxIpVideoServerFrame.cpp; sourceTree = "<group>"; };
-		FDCA5C4016A783460052C652 /* ofxIpVideoServerFrameQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxIpVideoServerFrameQueue.cpp; path = ../src/ofxIpVideoServerFrameQueue.cpp; sourceTree = "<group>"; };
-		FDCA5C4116A783480052C652 /* ofxIpVideoServerFrameQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxIpVideoServerFrameQueue.h; path = ../src/ofxIpVideoServerFrameQueue.h; sourceTree = "<group>"; };
-		FDCA5C4216A783480052C652 /* ofxIpVideoServerRoute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxIpVideoServerRoute.cpp; path = ../src/ofxIpVideoServerRoute.cpp; sourceTree = "<group>"; };
-		FDCA5C4316A7834A0052C652 /* ofxIpVideoServerRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxIpVideoServerRoute.h; path = ../src/ofxIpVideoServerRoute.h; sourceTree = "<group>"; };
-		FDCA5C4416A7834B0052C652 /* ofxIpVideoServerRouteHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxIpVideoServerRouteHandler.cpp; path = ../src/ofxIpVideoServerRouteHandler.cpp; sourceTree = "<group>"; };
-		FDCA5C4516A7834C0052C652 /* ofxIpVideoServerRouteHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxIpVideoServerRouteHandler.h; path = ../src/ofxIpVideoServerRouteHandler.h; sourceTree = "<group>"; };
-		FDCA5C4B16A784330052C652 /* ofxIpVideoServerFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxIpVideoServerFrame.h; path = ../src/ofxIpVideoServerFrame.h; sourceTree = "<group>"; };
+		FDA1F8D616A8C49800968B04 /* ofCryptoUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofCryptoUtils.cpp; path = ../src/ofCryptoUtils.cpp; sourceTree = "<group>"; };
+		FDA1F8D716A8C49800968B04 /* ofCryptoUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofCryptoUtils.h; path = ../src/ofCryptoUtils.h; sourceTree = "<group>"; };
+		FDA1F8D816A8C49800968B04 /* ofEnvironmentUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofEnvironmentUtils.cpp; path = ../src/ofEnvironmentUtils.cpp; sourceTree = "<group>"; };
+		FDA1F8D916A8C49800968B04 /* ofEnvironmentUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofEnvironmentUtils.h; path = ../src/ofEnvironmentUtils.h; sourceTree = "<group>"; };
+		FDA1F8DA16A8C49800968B04 /* ofHttpServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofHttpServer.cpp; path = ../src/ofHttpServer.cpp; sourceTree = "<group>"; };
+		FDA1F8DB16A8C49800968B04 /* ofHttpServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofHttpServer.h; path = ../src/ofHttpServer.h; sourceTree = "<group>"; };
+		FDA1F8DC16A8C49800968B04 /* ofHttpServerBaseRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofHttpServerBaseRoute.h; path = ../src/ofHttpServerBaseRoute.h; sourceTree = "<group>"; };
+		FDA1F8DD16A8C49800968B04 /* ofHttpServerBaseRouteHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofHttpServerBaseRouteHandler.cpp; path = ../src/ofHttpServerBaseRouteHandler.cpp; sourceTree = "<group>"; };
+		FDA1F8DE16A8C49800968B04 /* ofHttpServerBaseRouteHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofHttpServerBaseRouteHandler.h; path = ../src/ofHttpServerBaseRouteHandler.h; sourceTree = "<group>"; };
+		FDA1F8DF16A8C49800968B04 /* ofHttpServerDefaultRoute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofHttpServerDefaultRoute.cpp; path = ../src/ofHttpServerDefaultRoute.cpp; sourceTree = "<group>"; };
+		FDA1F8E016A8C49800968B04 /* ofHttpServerDefaultRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofHttpServerDefaultRoute.h; path = ../src/ofHttpServerDefaultRoute.h; sourceTree = "<group>"; };
+		FDA1F8E116A8C49800968B04 /* ofHttpServerDefaultRouteHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofHttpServerDefaultRouteHandler.cpp; path = ../src/ofHttpServerDefaultRouteHandler.cpp; sourceTree = "<group>"; };
+		FDA1F8E216A8C49800968B04 /* ofHttpServerDefaultRouteHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofHttpServerDefaultRouteHandler.h; path = ../src/ofHttpServerDefaultRouteHandler.h; sourceTree = "<group>"; };
+		FDA1F8E316A8C49800968B04 /* ofHttpServerFailedRouteHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofHttpServerFailedRouteHandler.cpp; path = ../src/ofHttpServerFailedRouteHandler.cpp; sourceTree = "<group>"; };
+		FDA1F8E416A8C49800968B04 /* ofHttpServerFailedRouteHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofHttpServerFailedRouteHandler.h; path = ../src/ofHttpServerFailedRouteHandler.h; sourceTree = "<group>"; };
+		FDA1F8E516A8C49800968B04 /* ofHttpServerMimeTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofHttpServerMimeTypes.h; path = ../src/ofHttpServerMimeTypes.h; sourceTree = "<group>"; };
+		FDA1F8E616A8C49800968B04 /* ofHttpServerRouteManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofHttpServerRouteManager.cpp; path = ../src/ofHttpServerRouteManager.cpp; sourceTree = "<group>"; };
+		FDA1F8E716A8C49800968B04 /* ofHttpServerRouteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofHttpServerRouteManager.h; path = ../src/ofHttpServerRouteManager.h; sourceTree = "<group>"; };
+		FDA1F8E816A8C49800968B04 /* ofHttpServerSessionManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofHttpServerSessionManager.cpp; path = ../src/ofHttpServerSessionManager.cpp; sourceTree = "<group>"; };
+		FDA1F8E916A8C49800968B04 /* ofHttpServerSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofHttpServerSessionManager.h; path = ../src/ofHttpServerSessionManager.h; sourceTree = "<group>"; };
+		FDA1F8EA16A8C49800968B04 /* ofHttpServerUploadRoute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofHttpServerUploadRoute.cpp; path = ../src/ofHttpServerUploadRoute.cpp; sourceTree = "<group>"; };
+		FDA1F8EB16A8C49800968B04 /* ofHttpServerUploadRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofHttpServerUploadRoute.h; path = ../src/ofHttpServerUploadRoute.h; sourceTree = "<group>"; };
+		FDA1F8EC16A8C49800968B04 /* ofHttpServerUploadRouteHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofHttpServerUploadRouteHandler.cpp; path = ../src/ofHttpServerUploadRouteHandler.cpp; sourceTree = "<group>"; };
+		FDA1F8ED16A8C49800968B04 /* ofHttpServerUploadRouteHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofHttpServerUploadRouteHandler.h; path = ../src/ofHttpServerUploadRouteHandler.h; sourceTree = "<group>"; };
+		FDA1F8EE16A8C49800968B04 /* ofHttpUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofHttpUtils.cpp; path = ../src/ofHttpUtils.cpp; sourceTree = "<group>"; };
+		FDA1F8EF16A8C49800968B04 /* ofHttpUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofHttpUtils.h; path = ../src/ofHttpUtils.h; sourceTree = "<group>"; };
+		FDA1F8F016A8C49800968B04 /* ofNetworkUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofNetworkUtils.cpp; path = ../src/ofNetworkUtils.cpp; sourceTree = "<group>"; };
+		FDA1F8F116A8C49800968B04 /* ofNetworkUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofNetworkUtils.h; path = ../src/ofNetworkUtils.h; sourceTree = "<group>"; };
+		FDA1F8F216A8C49800968B04 /* ofThreadErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofThreadErrorHandler.h; path = ../src/ofThreadErrorHandler.h; sourceTree = "<group>"; };
+		FDA1F8F316A8C49800968B04 /* ofxIpVideoServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxIpVideoServer.cpp; path = ../src/ofxIpVideoServer.cpp; sourceTree = "<group>"; };
+		FDA1F8F416A8C49800968B04 /* ofxIpVideoServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxIpVideoServer.h; path = ../src/ofxIpVideoServer.h; sourceTree = "<group>"; };
+		FDA1F8F516A8C49800968B04 /* ofxIpVideoServerFrame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxIpVideoServerFrame.cpp; path = ../src/ofxIpVideoServerFrame.cpp; sourceTree = "<group>"; };
+		FDA1F8F616A8C49800968B04 /* ofxIpVideoServerFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxIpVideoServerFrame.h; path = ../src/ofxIpVideoServerFrame.h; sourceTree = "<group>"; };
+		FDA1F8F716A8C49800968B04 /* ofxIpVideoServerFrameQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxIpVideoServerFrameQueue.cpp; path = ../src/ofxIpVideoServerFrameQueue.cpp; sourceTree = "<group>"; };
+		FDA1F8F816A8C49800968B04 /* ofxIpVideoServerFrameQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxIpVideoServerFrameQueue.h; path = ../src/ofxIpVideoServerFrameQueue.h; sourceTree = "<group>"; };
+		FDA1F8F916A8C49800968B04 /* ofxIpVideoServerRoute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxIpVideoServerRoute.cpp; path = ../src/ofxIpVideoServerRoute.cpp; sourceTree = "<group>"; };
+		FDA1F8FA16A8C49800968B04 /* ofxIpVideoServerRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxIpVideoServerRoute.h; path = ../src/ofxIpVideoServerRoute.h; sourceTree = "<group>"; };
+		FDA1F8FB16A8C49800968B04 /* ofxIpVideoServerRouteHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxIpVideoServerRouteHandler.cpp; path = ../src/ofxIpVideoServerRouteHandler.cpp; sourceTree = "<group>"; };
+		FDA1F8FC16A8C49800968B04 /* ofxIpVideoServerRouteHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxIpVideoServerRouteHandler.h; path = ../src/ofxIpVideoServerRouteHandler.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,17 +174,45 @@
 		2476f7e0671d4d899ea65404534fdbdd /* src */ = {
 			isa = PBXGroup;
 			children = (
-				FDCA5C3D16A783450052C652 /* ofxIpVideoServer.cpp */,
-				FDCA5C3E16A783450052C652 /* ofxIpVideoServer.h */,
-				FDCA5C3F16A783460052C652 /* ofxIpVideoServerFrame.cpp */,
-				FDCA5C4B16A784330052C652 /* ofxIpVideoServerFrame.h */,
-				FDCA5C4016A783460052C652 /* ofxIpVideoServerFrameQueue.cpp */,
-				FDCA5C4116A783480052C652 /* ofxIpVideoServerFrameQueue.h */,
-				FDCA5C4216A783480052C652 /* ofxIpVideoServerRoute.cpp */,
-				FDCA5C4316A7834A0052C652 /* ofxIpVideoServerRoute.h */,
-				FDCA5C4416A7834B0052C652 /* ofxIpVideoServerRouteHandler.cpp */,
-				FDCA5C4516A7834C0052C652 /* ofxIpVideoServerRouteHandler.h */,
-				FD4B8DC016A47365002F415D /* ofHttpServer */,
+				FDA1F8D616A8C49800968B04 /* ofCryptoUtils.cpp */,
+				FDA1F8D716A8C49800968B04 /* ofCryptoUtils.h */,
+				FDA1F8D816A8C49800968B04 /* ofEnvironmentUtils.cpp */,
+				FDA1F8D916A8C49800968B04 /* ofEnvironmentUtils.h */,
+				FDA1F8DA16A8C49800968B04 /* ofHttpServer.cpp */,
+				FDA1F8DB16A8C49800968B04 /* ofHttpServer.h */,
+				FDA1F8DC16A8C49800968B04 /* ofHttpServerBaseRoute.h */,
+				FDA1F8DD16A8C49800968B04 /* ofHttpServerBaseRouteHandler.cpp */,
+				FDA1F8DE16A8C49800968B04 /* ofHttpServerBaseRouteHandler.h */,
+				FDA1F8DF16A8C49800968B04 /* ofHttpServerDefaultRoute.cpp */,
+				FDA1F8E016A8C49800968B04 /* ofHttpServerDefaultRoute.h */,
+				FDA1F8E116A8C49800968B04 /* ofHttpServerDefaultRouteHandler.cpp */,
+				FDA1F8E216A8C49800968B04 /* ofHttpServerDefaultRouteHandler.h */,
+				FDA1F8E316A8C49800968B04 /* ofHttpServerFailedRouteHandler.cpp */,
+				FDA1F8E416A8C49800968B04 /* ofHttpServerFailedRouteHandler.h */,
+				FDA1F8E516A8C49800968B04 /* ofHttpServerMimeTypes.h */,
+				FDA1F8E616A8C49800968B04 /* ofHttpServerRouteManager.cpp */,
+				FDA1F8E716A8C49800968B04 /* ofHttpServerRouteManager.h */,
+				FDA1F8E816A8C49800968B04 /* ofHttpServerSessionManager.cpp */,
+				FDA1F8E916A8C49800968B04 /* ofHttpServerSessionManager.h */,
+				FDA1F8EA16A8C49800968B04 /* ofHttpServerUploadRoute.cpp */,
+				FDA1F8EB16A8C49800968B04 /* ofHttpServerUploadRoute.h */,
+				FDA1F8EC16A8C49800968B04 /* ofHttpServerUploadRouteHandler.cpp */,
+				FDA1F8ED16A8C49800968B04 /* ofHttpServerUploadRouteHandler.h */,
+				FDA1F8EE16A8C49800968B04 /* ofHttpUtils.cpp */,
+				FDA1F8EF16A8C49800968B04 /* ofHttpUtils.h */,
+				FDA1F8F016A8C49800968B04 /* ofNetworkUtils.cpp */,
+				FDA1F8F116A8C49800968B04 /* ofNetworkUtils.h */,
+				FDA1F8F216A8C49800968B04 /* ofThreadErrorHandler.h */,
+				FDA1F8F316A8C49800968B04 /* ofxIpVideoServer.cpp */,
+				FDA1F8F416A8C49800968B04 /* ofxIpVideoServer.h */,
+				FDA1F8F516A8C49800968B04 /* ofxIpVideoServerFrame.cpp */,
+				FDA1F8F616A8C49800968B04 /* ofxIpVideoServerFrame.h */,
+				FDA1F8F716A8C49800968B04 /* ofxIpVideoServerFrameQueue.cpp */,
+				FDA1F8F816A8C49800968B04 /* ofxIpVideoServerFrameQueue.h */,
+				FDA1F8F916A8C49800968B04 /* ofxIpVideoServerRoute.cpp */,
+				FDA1F8FA16A8C49800968B04 /* ofxIpVideoServerRoute.h */,
+				FDA1F8FB16A8C49800968B04 /* ofxIpVideoServerRouteHandler.cpp */,
+				FDA1F8FC16A8C49800968B04 /* ofxIpVideoServerRouteHandler.h */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -284,43 +312,6 @@
 			name = openFrameworks;
 			sourceTree = "<group>";
 		};
-		FD4B8DC016A47365002F415D /* ofHttpServer */ = {
-			isa = PBXGroup;
-			children = (
-				FD4B8DC116A47366002F415D /* ofEnvironmentUtils.cpp */,
-				FD4B8DC216A47366002F415D /* ofEnvironmentUtils.h */,
-				FD4B8DC316A47366002F415D /* ofHttpServer.cpp */,
-				FD4B8DC416A47366002F415D /* ofHttpServer.h */,
-				FD4B8DC516A47366002F415D /* ofHttpServerBaseRoute.h */,
-				FD4B8DC616A47366002F415D /* ofHttpServerBaseRouteHandler.cpp */,
-				FD4B8DC716A47366002F415D /* ofHttpServerBaseRouteHandler.h */,
-				FD4B8DC816A47366002F415D /* ofHttpServerDefaultRoute.cpp */,
-				FD4B8DC916A47366002F415D /* ofHttpServerDefaultRoute.h */,
-				FD4B8DCA16A47366002F415D /* ofHttpServerDefaultRouteHandler.cpp */,
-				FD4B8DCB16A47366002F415D /* ofHttpServerDefaultRouteHandler.h */,
-				FD4B8DCC16A47366002F415D /* ofHttpServerFailedRouteHandler.cpp */,
-				FD4B8DCD16A47366002F415D /* ofHttpServerFailedRouteHandler.h */,
-				FD4B8DCE16A47366002F415D /* ofHttpServerMimeTypes.h */,
-				FD4B8DCF16A47366002F415D /* ofHttpServerRouteManager.cpp */,
-				FD4B8DD016A47366002F415D /* ofHttpServerRouteManager.h */,
-				FD4B8DD116A47366002F415D /* ofHttpServerUploadRoute.cpp */,
-				FD4B8DD216A47366002F415D /* ofHttpServerUploadRoute.h */,
-				FD4B8DD316A47366002F415D /* ofHttpServerUploadRouteHandler.cpp */,
-				FD4B8DD416A47366002F415D /* ofHttpServerUploadRouteHandler.h */,
-				FD4B8DD516A47366002F415D /* ofNetworkUtils.cpp */,
-				FD4B8DD616A47366002F415D /* ofNetworkUtils.h */,
-				FD4B8DD716A47366002F415D /* ofThreadErrorHandler.h */,
-				FDCA5C2E16A7283E0052C652 /* ofHttpServerSessionManager.cpp */,
-				FDCA5C2F16A7283E0052C652 /* ofHttpServerSessionManager.h */,
-				FDCA5C3116A750A00052C652 /* ofCryptoUtils.cpp */,
-				FDCA5C3216A750A10052C652 /* ofCryptoUtils.h */,
-				FDCA5C3416A753F10052C652 /* ofHttpUtils.cpp */,
-				FDCA5C3516A753F20052C652 /* ofHttpUtils.h */,
-			);
-			name = ofHttpServer;
-			path = ../src/ofHttpServer;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -407,24 +398,24 @@
 			files = (
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* testApp.cpp in Sources */,
-				FD4B8DD816A47366002F415D /* ofEnvironmentUtils.cpp in Sources */,
-				FD4B8DD916A47366002F415D /* ofHttpServer.cpp in Sources */,
-				FD4B8DDA16A47366002F415D /* ofHttpServerBaseRouteHandler.cpp in Sources */,
-				FD4B8DDB16A47366002F415D /* ofHttpServerDefaultRoute.cpp in Sources */,
-				FD4B8DDC16A47366002F415D /* ofHttpServerDefaultRouteHandler.cpp in Sources */,
-				FD4B8DDD16A47366002F415D /* ofHttpServerFailedRouteHandler.cpp in Sources */,
-				FD4B8DDE16A47366002F415D /* ofHttpServerRouteManager.cpp in Sources */,
-				FD4B8DDF16A47366002F415D /* ofHttpServerUploadRoute.cpp in Sources */,
-				FD4B8DE016A47366002F415D /* ofHttpServerUploadRouteHandler.cpp in Sources */,
-				FD4B8DE116A47366002F415D /* ofNetworkUtils.cpp in Sources */,
-				FDCA5C3016A7283E0052C652 /* ofHttpServerSessionManager.cpp in Sources */,
-				FDCA5C3316A750A10052C652 /* ofCryptoUtils.cpp in Sources */,
-				FDCA5C3616A753F20052C652 /* ofHttpUtils.cpp in Sources */,
-				FDCA5C4616A7834C0052C652 /* ofxIpVideoServer.cpp in Sources */,
-				FDCA5C4716A7834C0052C652 /* ofxIpVideoServerFrame.cpp in Sources */,
-				FDCA5C4816A7834C0052C652 /* ofxIpVideoServerFrameQueue.cpp in Sources */,
-				FDCA5C4916A7834C0052C652 /* ofxIpVideoServerRoute.cpp in Sources */,
-				FDCA5C4A16A7834C0052C652 /* ofxIpVideoServerRouteHandler.cpp in Sources */,
+				FDA1F8FD16A8C49800968B04 /* ofCryptoUtils.cpp in Sources */,
+				FDA1F8FE16A8C49800968B04 /* ofEnvironmentUtils.cpp in Sources */,
+				FDA1F8FF16A8C49800968B04 /* ofHttpServer.cpp in Sources */,
+				FDA1F90016A8C49800968B04 /* ofHttpServerBaseRouteHandler.cpp in Sources */,
+				FDA1F90116A8C49800968B04 /* ofHttpServerDefaultRoute.cpp in Sources */,
+				FDA1F90216A8C49800968B04 /* ofHttpServerDefaultRouteHandler.cpp in Sources */,
+				FDA1F90316A8C49800968B04 /* ofHttpServerFailedRouteHandler.cpp in Sources */,
+				FDA1F90416A8C49800968B04 /* ofHttpServerRouteManager.cpp in Sources */,
+				FDA1F90516A8C49800968B04 /* ofHttpServerSessionManager.cpp in Sources */,
+				FDA1F90616A8C49800968B04 /* ofHttpServerUploadRoute.cpp in Sources */,
+				FDA1F90716A8C49800968B04 /* ofHttpServerUploadRouteHandler.cpp in Sources */,
+				FDA1F90816A8C49800968B04 /* ofHttpUtils.cpp in Sources */,
+				FDA1F90916A8C49800968B04 /* ofNetworkUtils.cpp in Sources */,
+				FDA1F90A16A8C49800968B04 /* ofxIpVideoServer.cpp in Sources */,
+				FDA1F90B16A8C49800968B04 /* ofxIpVideoServerFrame.cpp in Sources */,
+				FDA1F90C16A8C49800968B04 /* ofxIpVideoServerFrameQueue.cpp in Sources */,
+				FDA1F90D16A8C49800968B04 /* ofxIpVideoServerRoute.cpp in Sources */,
+				FDA1F90E16A8C49800968B04 /* ofxIpVideoServerRouteHandler.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
