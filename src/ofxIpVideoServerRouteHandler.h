@@ -47,7 +47,7 @@ class ofxIpVideoServerRouteHandler : public ofHttpServerBaseRouteHandler {
 public:
     struct Settings;
     
-    ofxIpVideoServerRouteHandler(const Settings& _settings, ofPtr<ofxIpVideoServerFrameQueue> _queue);
+    ofxIpVideoServerRouteHandler(const Settings& _settings, ofxIpVideoServerFrameQueue& _queue);
     virtual ~ofxIpVideoServerRouteHandler();
     
     void handleRequest(HTTPServerRequest& request, HTTPServerResponse& response);
@@ -65,7 +65,7 @@ public:
     };
     
 protected:
-    ofPtr<ofxIpVideoServerFrameQueue> queue;
+    ofxIpVideoServerFrameQueue& queue;
     
     Settings settings;
 };

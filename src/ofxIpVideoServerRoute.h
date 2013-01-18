@@ -65,7 +65,7 @@ protected:
     unsigned long long lastUpdated;
     ofBuffer buffer;
     
-    vector< ofPtr< ofxIpVideoServerFrameQueue > > queues;
+    vector<ofxIpVideoServerFrameQueue*> queues;
     
     ofxIpVideoServerRouteHandler::Settings settings;
 };

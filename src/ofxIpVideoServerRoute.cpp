@@ -73,11 +73,11 @@ HTTPRequestHandler* ofxIpVideoServerRoute::createRequestHandler(const HTTPServer
             }
         }
         
-        ofPtr<ofxIpVideoServerFrameQueue> queue = ofPtr<ofxIpVideoServerFrameQueue>(new ofxIpVideoServerFrameQueue(targetSettings));
+        ofxIpVideoServerFrameQueue* queue = new ofxIpVideoServerFrameQueue(targetSettings);
         
         queues.push_back(queue);
         
-        return new ofxIpVideoServerRouteHandler(settings,queue);
+        return new ofxIpVideoServerRouteHandler(settings,*queue);
     } else {
         return NULL;
     }
@@ -100,7 +100,7 @@ void ofxIpVideoServerRoute::pushFrame(ofPixels& pix) {
         ofPixels pixels(pix); // copy the pixels
         ofSaveImage(pixels, buffer, OF_IMAGE_FORMAT_JPEG, settings.quality);
         
-        vector< ofPtr<ofxIpVideoServerFrameQueue> >::iterator iter = queues.begin();
+        vector<ofxIpVideoServerFrameQueue*>::iterator iter = queues.begin();
         
         ofxIpVideoServerFrame::Settings settings;
         settings.quality = settings.quality;
@@ -109,19 +109,13 @@ void ofxIpVideoServerRoute::pushFrame(ofPixels& pix) {
                                                                                             timestamp,
                                                                                             settings));
 
-        cout << "queues.size=" << queues.size() << endl;
         while(iter != queues.end()) {
-            cout << "usecnt=" << (*iter).use_count() << endl;
-            
-            
             if((*iter) != NULL && (*iter)->isActive()) {
                 (*iter)->push(frame);
             }
             ++iter;
         }
-        
-        cout << "<<<<" << endl;
-    
+            
     } else {
         ofLogError("ofxIpVideoServerRoute::pushFrame") << "Pushing unallocated pixels.";
     }

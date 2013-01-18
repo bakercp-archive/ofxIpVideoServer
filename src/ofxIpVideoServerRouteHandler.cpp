@@ -15,7 +15,7 @@ ofxIpVideoServerRouteHandler::Settings::Settings() {
 }
 
 //------------------------------------------------------------------------------
-ofxIpVideoServerRouteHandler::ofxIpVideoServerRouteHandler(const Settings& _settings, ofPtr<ofxIpVideoServerFrameQueue> _queue) : settings(_settings), queue(_queue) { }
+ofxIpVideoServerRouteHandler::ofxIpVideoServerRouteHandler(const Settings& _settings, ofxIpVideoServerFrameQueue& _queue) : settings(_settings), queue(_queue) { }
 
 //------------------------------------------------------------------------------
 ofxIpVideoServerRouteHandler::~ofxIpVideoServerRouteHandler() {
@@ -44,45 +44,26 @@ void ofxIpVideoServerRouteHandler::handleRequest(HTTPServerRequest& request,
 
         bool stopStreaming = false;
         
-        ofBuffer b = ofBufferFromFile("puppy.jpg");
-        
         while(ostr.good() && !stopStreaming) {
-            
-            try {
-            
-                if(queue != NULL) {
-                   // if(!queue->empty()) {
-                        //ofxIpVideoServerFramePtr frame = queue->pop();
-                        //if(frame != NULL) {
-//                            ofBuffer* buffer = &frame.get()->buffer;
-                            ostr << settings.boundary;
-                            ostr << "\r\n";
-                            ostr << "Content-Type: image/jpeg";
-                            ostr << "\r\n";
-//                            ostr << "Content-Length: " << ofToString(buffer->size());
-                            ostr << "Content-Length: " << ofToString(b.size());
-                            ostr << "\r\n";
-                            ostr << "\r\n";
-//                            ostr << *buffer;
-                            ostr << b;
-//                        } else {
-//                            ofLogWarning("ofxIpVideoServerRouteHandler::handleRequest") << "Null buffer.";
-//                        }
-//                    } else {
-//                        ofLogWarning("ofxIpVideoServerRouteHandler::handleRequest") << "Queue empty.";
-//                    }
-                    
+            if(!queue.empty()) {
+                ofxIpVideoServerFramePtr frame = queue.pop();
+                    if(frame != NULL) {
+                        ofBuffer* buffer = &frame.get()->buffer;
+                        ostr << settings.boundary;
+                        ostr << "\r\n";
+                        ostr << "Content-Type: image/jpeg";
+                        ostr << "\r\n";
+                        ostr << "Content-Length: " << ofToString(buffer->size());
+                        ostr << "\r\n";
+                        ostr << "\r\n";
+                        ostr << *buffer;
+                    } else {
+                        ofLogWarning("ofxIpVideoServerRouteHandler::handleRequest") << "Null buffer.";
+                    }
                 } else {
-                    stopStreaming = true;
-                    ostr << "Buffer = NULL";
-                    cout << "buffer = null" << endl;
+                    ofLogWarning("ofxIpVideoServerRouteHandler::handleRequest") << "Queue empty.";
                 }
-                
-            } catch(...) {
-                stopStreaming = true;
-                cout << "CAUGHT ERROR" << endl;
-            }
-
+            
             if(!ostr.good()) {
                 cout << "STREAM WENT BAD" << endl;
             }
@@ -90,7 +71,7 @@ void ofxIpVideoServerRouteHandler::handleRequest(HTTPServerRequest& request,
             Thread::sleep(50);
         }
         
-        queue->setActive(false);
+        queue.setActive(false); // a desperate move 
         
         cout << "Dead" << endl;
         
