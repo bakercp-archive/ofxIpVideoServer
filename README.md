@@ -5,6 +5,8 @@ ofxIpVideoServer
 
 mjpeg IP Video server.  In progress.
 
+Requres ofxWebServer https://github.com/bakercp/ofxWebServer
+
 #License
 
 Copyright (c) 2011, 2012 Christopher Baker <http://christopherbaker.net>
