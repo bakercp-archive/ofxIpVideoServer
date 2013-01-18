@@ -39,6 +39,7 @@ void testApp::setup() {
         
     video.loadMovie("DocumentRoot/fingers.mov");
     video.play();
+    video.setLoopState(OF_LOOP_PALINDROME);
     
     ofxIpVideoServer::Settings settings;
 
