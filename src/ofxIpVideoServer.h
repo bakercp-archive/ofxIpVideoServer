@@ -24,9 +24,6 @@
 
 #pragma once
 
-//#include "ofBaseTypes.h"
-//#include "ofPixels.h"
-
 #include "ofMain.h"
 
 #include "ofxWebServer.h"
@@ -56,5 +53,4 @@ protected:
     
     ofPtr<ofxIpVideoServerRoute> defaultVideoRoute;
 
-    
 };

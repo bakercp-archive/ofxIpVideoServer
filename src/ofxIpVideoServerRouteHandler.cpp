@@ -58,22 +58,18 @@ void ofxIpVideoServerRouteHandler::handleRequest(HTTPServerRequest& request,
                         ostr << "\r\n";
                         ostr << *buffer;
                     } else {
-                        ofLogWarning("ofxIpVideoServerRouteHandler::handleRequest") << "Null buffer.";
+                        ofLogVerbose("ofxIpVideoServerRouteHandler::handleRequest") << "Null buffer.";
                     }
                 } else {
-                    ofLogWarning("ofxIpVideoServerRouteHandler::handleRequest") << "Queue empty.";
+                    ofLogVerbose("ofxIpVideoServerRouteHandler::handleRequest") << "Queue empty.";
                 }
-            
-            if(!ostr.good()) {
-                cout << "STREAM WENT BAD" << endl;
-            }
             
             Thread::sleep(50);
         }
         
         queue.setActive(false); // a desperate move 
         
-        cout << "Dead" << endl;
+        ofLogNotice("ofxIpVideoServerRouteHandler::handleRequest") << "Client disconneted.";
         
         //sendErrorResponse(response);
     }

@@ -10,11 +10,8 @@
 		0bce9ad547c01aa0ec69d8f6ccef4d69 /* ofxIpVideoServerRoute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8d091e61b517a24e4e62fef96c8027a7 /* ofxIpVideoServerRoute.cpp */; };
 		12ad5d515882be270e0fd97ab3457cb2 /* ofxIpVideoServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35bc856d374580a984a40a6010820ac1 /* ofxIpVideoServer.cpp */; };
 		1a8f9495ffa0ad0d40537546551dd152 /* ofxWebServerBaseRouteHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = bcfcef40e807abb94191665fca0dfabd /* ofxWebServerBaseRouteHandler.cpp */; };
-		3d2e2b27ea38e3cece140e43fdcefb1c /* ofxWebServerRouteManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85d14f3ccf0df22a0a7a81ce49013cb9 /* ofxWebServerRouteManager.cpp */; };
-		46cb8617b709370552a7efd86acbe37d /* ofxWebServerBasic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84d6861bedd20c0d43327f1b1cb5884e /* ofxWebServerBasic.cpp */; };
 		4cbeddd3fa7a26be649d5987cb099cf1 /* ofxWebServerDefaultRouteHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0981a6688f6eb8d2c114917c5f65cf27 /* ofxWebServerDefaultRouteHandler.cpp */; };
 		4ead2010f2d75c1239b6020409291a13 /* ofxIpVideoServerRouteHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9cd8db5bc3b8e3a04544a2c97734085c /* ofxIpVideoServerRouteHandler.cpp */; };
-		541632a52b3e183b019104573bb9e2d1 /* ofxWebServerUploadRoute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = bcb654b1663aba34f4762681d70d5b81 /* ofxWebServerUploadRoute.cpp */; };
 		69b6e5b28a354d4ecbb30d7223e73e02 /* ofxIpVideoServerFrameQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9368c822d6265f353d921d38642c8e14 /* ofxIpVideoServerFrameQueue.cpp */; };
 		7390df68c00c1395e70e504f18083583 /* ofxWebServerUploadRouteHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2c703b8dce1596a392667ba32113d84b /* ofxWebServerUploadRouteHandler.cpp */; };
 		889dbe9f8b77bdb2fbcd8be99700905b /* ofxHttpUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8b41dece40845c7766bc63fc3f787bb8 /* ofxHttpUtils.cpp */; };
@@ -40,7 +37,6 @@
 		E7F985F815E0DEA3003869B5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F985F515E0DE99003869B5 /* Accelerate.framework */; };
 		b54ab98a3f5592efc521202ece408f66 /* ofxIpVideoServerFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 779318b634b082541f836782f3e41f1e /* ofxIpVideoServerFrame.cpp */; };
 		d8be0158e3f53946261a79bc29fcb3f7 /* ofxWebServerSessionManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = b39770257f3aa274f7578e811a2a2a34 /* ofxWebServerSessionManager.cpp */; };
-		eb096289f4723ae87aafed2d3152f896 /* ofxWebServerFailedRouteHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13da7edebabe1e50babaf4a68fc8d2ac /* ofxWebServerFailedRouteHandler.cpp */; };
 		f559c7c3a5c70a7bfddd9f614ceff325 /* ofxWebServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = e8f30527a566d15523840221d1542f5b /* ofxWebServer.cpp */; };
 /* End PBXBuildFile section */
 
@@ -78,7 +74,6 @@
 		07b913fe4adc153acd6b896dbef314f6 /* ofxWebServerDefaultRoute.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxWebServerDefaultRoute.h; path = ../../../addons/ofxWebServer/src/ofxWebServerDefaultRoute.h; sourceTree = SOURCE_ROOT; };
 		0981a6688f6eb8d2c114917c5f65cf27 /* ofxWebServerDefaultRouteHandler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxWebServerDefaultRouteHandler.cpp; path = ../../../addons/ofxWebServer/src/ofxWebServerDefaultRouteHandler.cpp; sourceTree = SOURCE_ROOT; };
 		09d459ddf22344d6fc6f15d6ffb18106 /* ofxHttpUtils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxHttpUtils.h; path = ../../../addons/ofxWebServer/src/ofxHttpUtils.h; sourceTree = SOURCE_ROOT; };
-		13da7edebabe1e50babaf4a68fc8d2ac /* ofxWebServerFailedRouteHandler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxWebServerFailedRouteHandler.cpp; path = ../../../addons/ofxWebServer/src/ofxWebServerFailedRouteHandler.cpp; sourceTree = SOURCE_ROOT; };
 		15013e503bd1112412dfd37ecc85d2ba /* ofxWebServerUploadRouteHandler.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxWebServerUploadRouteHandler.h; path = ../../../addons/ofxWebServer/src/ofxWebServerUploadRouteHandler.h; sourceTree = SOURCE_ROOT; };
 		29ae3ba7c46343b677856aae28b9634f /* ofxWebServerFailedRouteHandler.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxWebServerFailedRouteHandler.h; path = ../../../addons/ofxWebServer/src/ofxWebServerFailedRouteHandler.h; sourceTree = SOURCE_ROOT; };
 		2af6baa9a9164cf84827823a0b71201e /* ofxWebServerBasic.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxWebServerBasic.h; path = ../../../addons/ofxWebServer/src/ofxWebServerBasic.h; sourceTree = SOURCE_ROOT; };
@@ -94,8 +89,6 @@
 		779318b634b082541f836782f3e41f1e /* ofxIpVideoServerFrame.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxIpVideoServerFrame.cpp; path = ../../../addons/ofxIpVideoServer/src/ofxIpVideoServerFrame.cpp; sourceTree = SOURCE_ROOT; };
 		7b52327d176c847c0044185711195c6f /* ofxWebServerSessionManager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxWebServerSessionManager.h; path = ../../../addons/ofxWebServer/src/ofxWebServerSessionManager.h; sourceTree = SOURCE_ROOT; };
 		807eb8c619fc35d1e23ee83f2a886248 /* ofxWebServerUploadRoute.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxWebServerUploadRoute.h; path = ../../../addons/ofxWebServer/src/ofxWebServerUploadRoute.h; sourceTree = SOURCE_ROOT; };
-		84d6861bedd20c0d43327f1b1cb5884e /* ofxWebServerBasic.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxWebServerBasic.cpp; path = ../../../addons/ofxWebServer/src/ofxWebServerBasic.cpp; sourceTree = SOURCE_ROOT; };
-		85d14f3ccf0df22a0a7a81ce49013cb9 /* ofxWebServerRouteManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxWebServerRouteManager.cpp; path = ../../../addons/ofxWebServer/src/ofxWebServerRouteManager.cpp; sourceTree = SOURCE_ROOT; };
 		8b41dece40845c7766bc63fc3f787bb8 /* ofxHttpUtils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxHttpUtils.cpp; path = ../../../addons/ofxWebServer/src/ofxHttpUtils.cpp; sourceTree = SOURCE_ROOT; };
 		8d091e61b517a24e4e62fef96c8027a7 /* ofxIpVideoServerRoute.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxIpVideoServerRoute.cpp; path = ../../../addons/ofxIpVideoServer/src/ofxIpVideoServerRoute.cpp; sourceTree = SOURCE_ROOT; };
 		9368c822d6265f353d921d38642c8e14 /* ofxIpVideoServerFrameQueue.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxIpVideoServerFrameQueue.cpp; path = ../../../addons/ofxIpVideoServer/src/ofxIpVideoServerFrameQueue.cpp; sourceTree = SOURCE_ROOT; };
@@ -127,7 +120,6 @@
 		E7E077E715D3B6510020DFD4 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		E7F985F515E0DE99003869B5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
 		b39770257f3aa274f7578e811a2a2a34 /* ofxWebServerSessionManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxWebServerSessionManager.cpp; path = ../../../addons/ofxWebServer/src/ofxWebServerSessionManager.cpp; sourceTree = SOURCE_ROOT; };
-		bcb654b1663aba34f4762681d70d5b81 /* ofxWebServerUploadRoute.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxWebServerUploadRoute.cpp; path = ../../../addons/ofxWebServer/src/ofxWebServerUploadRoute.cpp; sourceTree = SOURCE_ROOT; };
 		bcfcef40e807abb94191665fca0dfabd /* ofxWebServerBaseRouteHandler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxWebServerBaseRouteHandler.cpp; path = ../../../addons/ofxWebServer/src/ofxWebServerBaseRouteHandler.cpp; sourceTree = SOURCE_ROOT; };
 		c652cc52f11577eea8325f819e6524df /* ofxIpVideoServerFrame.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxIpVideoServerFrame.h; path = ../../../addons/ofxIpVideoServer/src/ofxIpVideoServerFrame.h; sourceTree = SOURCE_ROOT; };
 		c81bb9df8cadca3894f09a2df40fb12a /* ofxWebServerDefaultRouteHandler.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxWebServerDefaultRouteHandler.h; path = ../../../addons/ofxWebServer/src/ofxWebServerDefaultRouteHandler.h; sourceTree = SOURCE_ROOT; };
@@ -174,19 +166,15 @@
 				6bcd680c3fb4b737cd28f87aaab0dc90 /* ofxWebServerBaseRoute.h */,
 				bcfcef40e807abb94191665fca0dfabd /* ofxWebServerBaseRouteHandler.cpp */,
 				9d6b2bd57630596f1a8fa0551c516655 /* ofxWebServerBaseRouteHandler.h */,
-				84d6861bedd20c0d43327f1b1cb5884e /* ofxWebServerBasic.cpp */,
 				2af6baa9a9164cf84827823a0b71201e /* ofxWebServerBasic.h */,
 				07b913fe4adc153acd6b896dbef314f6 /* ofxWebServerDefaultRoute.h */,
 				0981a6688f6eb8d2c114917c5f65cf27 /* ofxWebServerDefaultRouteHandler.cpp */,
 				c81bb9df8cadca3894f09a2df40fb12a /* ofxWebServerDefaultRouteHandler.h */,
-				13da7edebabe1e50babaf4a68fc8d2ac /* ofxWebServerFailedRouteHandler.cpp */,
 				29ae3ba7c46343b677856aae28b9634f /* ofxWebServerFailedRouteHandler.h */,
 				9cd016c57fa3862cddaaf4c3d6d81b4f /* ofxWebServerMimeTypes.h */,
-				85d14f3ccf0df22a0a7a81ce49013cb9 /* ofxWebServerRouteManager.cpp */,
 				6bfa4649ac445aa82abaeec2d6da7cbe /* ofxWebServerRouteManager.h */,
 				b39770257f3aa274f7578e811a2a2a34 /* ofxWebServerSessionManager.cpp */,
 				7b52327d176c847c0044185711195c6f /* ofxWebServerSessionManager.h */,
-				bcb654b1663aba34f4762681d70d5b81 /* ofxWebServerUploadRoute.cpp */,
 				807eb8c619fc35d1e23ee83f2a886248 /* ofxWebServerUploadRoute.h */,
 				2c703b8dce1596a392667ba32113d84b /* ofxWebServerUploadRouteHandler.cpp */,
 				15013e503bd1112412dfd37ecc85d2ba /* ofxWebServerUploadRouteHandler.h */,
@@ -409,12 +397,8 @@
 				889dbe9f8b77bdb2fbcd8be99700905b /* ofxHttpUtils.cpp in Sources */,
 				f559c7c3a5c70a7bfddd9f614ceff325 /* ofxWebServer.cpp in Sources */,
 				1a8f9495ffa0ad0d40537546551dd152 /* ofxWebServerBaseRouteHandler.cpp in Sources */,
-				46cb8617b709370552a7efd86acbe37d /* ofxWebServerBasic.cpp in Sources */,
 				4cbeddd3fa7a26be649d5987cb099cf1 /* ofxWebServerDefaultRouteHandler.cpp in Sources */,
-				eb096289f4723ae87aafed2d3152f896 /* ofxWebServerFailedRouteHandler.cpp in Sources */,
-				3d2e2b27ea38e3cece140e43fdcefb1c /* ofxWebServerRouteManager.cpp in Sources */,
 				d8be0158e3f53946261a79bc29fcb3f7 /* ofxWebServerSessionManager.cpp in Sources */,
-				541632a52b3e183b019104573bb9e2d1 /* ofxWebServerUploadRoute.cpp in Sources */,
 				7390df68c00c1395e70e504f18083583 /* ofxWebServerUploadRouteHandler.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

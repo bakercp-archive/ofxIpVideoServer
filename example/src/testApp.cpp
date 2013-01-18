@@ -12,8 +12,7 @@ void testApp::exit() {
 void testApp::setup() {
     
     ofSetFrameRate(30);
-    ofSetLogLevel(OF_LOG_VERBOSE);
-        
+    
     video.loadMovie("DocumentRoot/fingers.mov");
     video.play();
     video.setLoopState(OF_LOOP_PALINDROME);
