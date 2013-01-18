@@ -34,7 +34,7 @@
 #include "ofAppRunner.h"
 #include "ofImage.h"
 
-#include "ofHttpServerBaseRouteHandler.h"
+#include "ofxWebServerBaseRouteHandler.h"
 #include "ofxIpVideoServerFrameQueue.h"
 
 using Poco::DateTimeFormat;
@@ -43,7 +43,7 @@ using Poco::Timestamp;
 using Poco::Thread;
 
 //------------------------------------------------------------------------------
-class ofxIpVideoServerRouteHandler : public ofHttpServerBaseRouteHandler {
+class ofxIpVideoServerRouteHandler : public ofxWebServerBaseRouteHandler {
 public:
     struct Settings;
     
@@ -59,7 +59,7 @@ public:
         string boundary;
         unsigned long long frameSleep;
         ofImageQualityType quality;
-        ofHttpServerBaseRouteHandler::Settings route;
+        ofxWebServerBaseRouteHandler::Settings route;
         
         Settings();
     };

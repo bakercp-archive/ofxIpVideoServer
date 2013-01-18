@@ -85,26 +85,13 @@ HTTPRequestHandler* ofxIpVideoServerRoute::createRequestHandler(const HTTPServer
 
 //------------------------------------------------------------------------------
 void ofxIpVideoServerRoute::pushFrame(ofPixels& pix) {
-
-    int sz = queues.size();
-
-//    ofRemove(queues,queueIsNULL);
-    
-    int sz2 = queues.size();
-    if(sz != sz2) {
-        cout << "removed one!!!!!!!!!!!!!!!" << endl;
-    }
-    
     if(pix.isAllocated()) {
         unsigned long long timestamp = ofGetElapsedTimeMillis();
         ofPixels pixels(pix); // copy the pixels
         ofSaveImage(pixels, buffer, OF_IMAGE_FORMAT_JPEG, settings.quality);
-        
         vector<ofxIpVideoServerFrameQueue*>::iterator iter = queues.begin();
-        
         ofxIpVideoServerFrame::Settings settings;
         settings.quality = settings.quality;
-        
         ofxIpVideoServerFramePtr frame = ofxIpVideoServerFramePtr(new ofxIpVideoServerFrame(buffer,
                                                                                             timestamp,
                                                                                             settings));
@@ -121,44 +108,12 @@ void ofxIpVideoServerRoute::pushFrame(ofPixels& pix) {
     }
 }
 
-////------------------------------------------------------------------------------
-//void ofxIpVideoServerRoute::pushFrame(ofFloatPixels& pix) {
-//    if(pix.isAllocated()) {
-//        ofFloatPixels pixels(pix); // copy the pixels
-//        ofSaveImage(pixels, doubleBuffer[ci^1], OF_IMAGE_FORMAT_JPEG, settings.quality);
-//        flipBuffer();
-//    } else {
-//        ofLogError("ofxIpVideoServerRoute::pushFrame") << "Pushing unallocated pixels.";
-//    }
-//}
-//
-////------------------------------------------------------------------------------
-//void ofxIpVideoServerRoute::pushFrame(ofShortPixels& pix) {
-//    if(pix.isAllocated()) {
-//        ofShortPixels pixels(pix);
-//        ofSaveImage(pixels, doubleBuffer[ci^1], OF_IMAGE_FORMAT_JPEG, settings.quality);
-//        flipBuffer();
-//    } else {
-//        ofLogError("ofxIpVideoServerRoute::pushFrame") << "Pushing unallocated pixels.";
-//    }
-//}
-//
-////------------------------------------------------------------------------------
-//void ofxIpVideoServerRoute::pushFrame(ofImage& img) {
-//    pushFrame(img.getPixelsRef());
-//}
-//
-////------------------------------------------------------------------------------
-//void ofxIpVideoServerRoute::pushFrame(ofFloatImage& img) {
-//    pushFrame(img.getPixelsRef());
-//}
-//
-////------------------------------------------------------------------------------
-//void ofxIpVideoServerRoute::pushFrame(ofShortImage& img) {
-//    pushFrame(img.getPixelsRef());
-//}
+//------------------------------------------------------------------------------
+void ofxIpVideoServerRoute::pushFrame(ofImage& img) {
+    pushFrame(img.getPixelsRef());
+}
 
 //------------------------------------------------------------------------------
-ofxIpVideoServerRoute* ofxIpVideoServerRoute::Instance(const ofxIpVideoServerRouteHandler::Settings& settings) {
-    return new ofxIpVideoServerRoute(settings);
+ofPtr<ofxIpVideoServerRoute> ofxIpVideoServerRoute::Instance(const ofxIpVideoServerRouteHandler::Settings& settings) {
+    return ofPtr<ofxIpVideoServerRoute>(new ofxIpVideoServerRoute(settings));
 }

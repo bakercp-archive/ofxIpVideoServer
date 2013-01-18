@@ -29,12 +29,12 @@
 
 #include "ofMain.h"
 
-#include "ofHttpServer.h"
+#include "ofxWebServer.h"
 
 #include "ofxIpVideoServerRoute.h"
 
 //------------------------------------------------------------------------------
-class ofxIpVideoServer : public ofHttpServer {
+class ofxIpVideoServer : public ofxWebServer {
 public:
     
     struct Settings;
@@ -48,8 +48,7 @@ public:
 //        float maxFrameRate;
 //        float maxBitRate;
         
-        ofHttpServer::Settings server;
-        ofHttpServerBaseRouteHandler::Settings route;
+        ofxWebServer::Settings server;
         
         Settings();
     };

@@ -26,18 +26,16 @@
 
 #include "ofImage.h"
 
-#include "ofHttpServerBaseRoute.h"
+#include "ofxWebServerBaseRoute.h"
 #include "ofxIpVideoServerRouteHandler.h"
 
 #include "ofxIpVideoServerFrame.h"
 #include "ofxIpVideoServerFrameQueue.h"
 
-//typedef Poco::FastMutex::ScopedLock ofScopedLock;
-
 #define MAX_VIDEO_DIM 1920
 
 //------------------------------------------------------------------------------
-class ofxIpVideoServerRoute : public ofHttpServerBaseRoute {
+class ofxIpVideoServerRoute : public ofxWebServerBaseRoute {
 public:
     
     struct Settings;
@@ -46,18 +44,12 @@ public:
     virtual ~ofxIpVideoServerRoute();
     
     HTTPRequestHandler* createRequestHandler(const HTTPServerRequest& request);
-    
+
     void pushFrame(ofPixels& pix);
-//    void pushFrame(ofFloatPixels& pix);
-//    void pushFrame(ofShortPixels& pix);
-//    
-//    // ofBaseHasPixels needs a const ref-getter
-//    void pushFrame(ofImage& img);
-//    void pushFrame(ofFloatImage& img);
-//    void pushFrame(ofShortImage& img);
+    void pushFrame(ofImage& img);
     
     
-    static ofxIpVideoServerRoute* Instance(const ofxIpVideoServerRouteHandler::Settings& settings = ofxIpVideoServerRouteHandler::Settings());
+    static ofPtr<ofxIpVideoServerRoute> Instance(const ofxIpVideoServerRouteHandler::Settings& settings = ofxIpVideoServerRouteHandler::Settings());
     
 
 protected:
