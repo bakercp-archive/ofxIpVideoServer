@@ -27,21 +27,19 @@
 #include "ofMain.h"
 #include "ofxIpVideoServer.h"
 #include "ofxIpVideoServerRoute.h"
-#include "ofHttpServerDefaultRoute.h"
-#include "ofHttpServerUploadRoute.h"
 
 class testApp : public ofBaseApp {
 
-	public:
-        virtual ~testApp();
+public:
 
-        void setup();
-        void update();
-        void draw();
+    void setup();
+    void update();
+    void draw();
+    void exit();
     
       
     ofxIpVideoServer* server;
-    ofxIpVideoServerRoute* videoRoute;
+    ofPtr<ofxIpVideoServerRoute> videoRoute;
     
     ofVideoPlayer 		video;
 
