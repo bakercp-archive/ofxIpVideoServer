@@ -78,7 +78,7 @@ void ofHttpServer::start(){
     serverParams->setSoftwareVersion(settings.softwareVersion);
     
     // we use the default thread pool
-    server = new HTTPServer(ofxIpVideoServerRoute::Instance(),//new ofHttpServerRouteManager(routes),
+    server = new HTTPServer(new ofHttpServerRouteManager(routes),
                             ServerSocket(settings.port),
                             serverParams);
 

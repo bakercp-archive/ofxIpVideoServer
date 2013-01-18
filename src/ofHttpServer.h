@@ -43,8 +43,6 @@
 
 #include "ofHttpServerRouteManager.h"
 
-#include "ofxIpVideoServerRoute.h"
-
 using std::string;
 
 using Poco::Thread;
