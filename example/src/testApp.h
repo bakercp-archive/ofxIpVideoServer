@@ -24,6 +24,8 @@
 
 #pragma once
 
+//#define USE_GRABBER 1 // uncomment to use the camera
+
 #include "ofMain.h"
 #include "ofxIpVideoServer.h"
 #include "ofxIpVideoServerRoute.h"
@@ -41,6 +43,10 @@ public:
     ofxIpVideoServer* server;
     ofPtr<ofxIpVideoServerRoute> videoRoute;
     
+#ifdef USE_GRABBER
+    ofVideoGrabber 		video;
+#else
     ofVideoPlayer 		video;
-
+#endif
+    
 };

@@ -13,19 +13,23 @@ void testApp::setup() {
     
     ofSetFrameRate(30);
     
+#ifdef USE_GRABBER
+    video.initGrabber(1280,720);
+#else
     video.loadMovie("DocumentRoot/fingers.mov");
     video.play();
     video.setLoopState(OF_LOOP_PALINDROME);
-    
-    ofxIpVideoServer::Settings settings;
-    settings.server.port = 8990;
-        
-    server = new ofxIpVideoServer(settings);
+#endif
 
-    ofxIpVideoServerRouteHandler::Settings videoRouteSettings;
-    videoRouteSettings.route.path = "/";
+    ofSetWindowShape(video.getWidth(),video.getHeight());
     
-    videoRoute = ofxIpVideoServerRoute::Instance(videoRouteSettings);
+    server = new ofxIpVideoServer();
+
+    ofxIpVideoServerRouteHandler::Settings settings;
+    settings.route.path = "/";
+    
+    videoRoute = ofxIpVideoServerRoute::Instance(settings);
+
     server->addRoute(videoRoute);
 
     server->start();
