@@ -33,6 +33,7 @@ void ofApp::setup()
 
     player.loadMovie("DocumentRoot/fingers.mp4");
     player.play();
+    player.setLoopState(OF_LOOP_NORMAL);
 
     BasicIPVideoServerSettings settings;
     server = BasicIPVideoServer::makeShared();
@@ -56,7 +57,6 @@ void ofApp::update()
 void ofApp::draw()
 {
     player.draw(0,0);
-
     ofDrawBitmapStringHighlight("Num clients connected: " + ofToString(server->getNumConnections()), 20,20);
 }
 
