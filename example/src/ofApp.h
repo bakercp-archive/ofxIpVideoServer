@@ -23,11 +23,31 @@
 // =============================================================================
 
 
-#include "ofApp.h"
+#pragma once
 
 
-int main()
+#include "ofMain.h"
+#include "BasicIPVideoServer.h"
+
+
+using ofx::HTTP::BasicIPVideoServer;
+using ofx::HTTP::BasicIPVideoServerSettings;
+
+
+class ofApp: public ofBaseApp
 {
-	ofSetupOpenGL(320,240,OF_WINDOW);
-	ofRunApp(new ofApp());
-}
+public:
+    void setup();
+    void update();
+    void draw();
+    void keyPressed(int key);
+
+    BasicIPVideoServer::SharedPtr server;
+
+//    ofVideoGrabber grabber;
+    ofVideoPlayer player;
+
+    ofImage img;
+
+    bool isStreamingGrabber;
+};

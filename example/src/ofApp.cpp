@@ -26,8 +26,68 @@
 #include "ofApp.h"
 
 
-int main()
+//------------------------------------------------------------------------------
+void ofApp::setup()
 {
-	ofSetupOpenGL(320,240,OF_WINDOW);
-	ofRunApp(new ofApp());
+    ofSetLogLevel(OF_LOG_VERBOSE);
+    ofSetFrameRate(15);
+
+    isStreamingGrabber = false;
+
+//    grabber/
+
+    img.loadImage("DocumentRoot/puppy.jpg");
+
+
+//    grabber.initGrabber(1280,720);
+
+    player.loadMovie("DocumentRoot/fingers.mov");
+    player.play();
+    player.setLoopState(OF_LOOP_PALINDROME);
+
+//    ofSetWindowShape(video.getWidth(),video.getHeight());
+
+    BasicIPVideoServerSettings settings;
+    
+    server = BasicIPVideoServer::makeShared();
+
+    server->start();
+
+    ofLaunchBrowser(server->getURL());
 }
+
+//------------------------------------------------------------------------------
+void ofApp::update()
+{
+    player.update();
+
+    if(player.isFrameNew())
+    {
+        ofPixels pixels = player.getPixelsRef();
+
+        server->send(pixels);
+    }
+
+//    server->send(img.getPixelsRef());
+}
+
+//------------------------------------------------------------------------------
+void ofApp::draw()
+{
+//    img.draw(0,0);
+    player.draw(0,0);
+
+
+    ofDrawBitmapStringHighlight("Num clients connected: " + ofToString(server->getNumConnections()), 20,20);
+
+}
+
+
+void ofApp::keyPressed(int key)
+{
+    if(key == ' ')
+    {
+
+    }
+}
+
