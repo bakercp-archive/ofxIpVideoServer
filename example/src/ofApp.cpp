@@ -31,7 +31,7 @@ void ofApp::setup()
 {
     ofSetFrameRate(30);
 
-    player.loadMovie("DocumentRoot/fingers.mov");
+    player.loadMovie("DocumentRoot/fingers.mp4");
     player.play();
 
     BasicIPVideoServerSettings settings;
