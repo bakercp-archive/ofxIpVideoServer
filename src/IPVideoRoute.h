@@ -28,7 +28,7 @@
 
 #include <algorithm>
 #include "ofImage.h"
-#include "IPvideoRouteHandler.h"
+#include "IPVideoRouteHandler.h"
 #include "IPVideoRouteInterface.h"
 #include "IPVideoRouteSettings.h"
 #include "IPVideoFrameQueue.h"
