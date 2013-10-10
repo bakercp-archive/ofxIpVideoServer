@@ -40,14 +40,9 @@ public:
     void setup();
     void update();
     void draw();
-    void keyPressed(int key);
 
     BasicIPVideoServer::SharedPtr server;
 
-//    ofVideoGrabber grabber;
     ofVideoPlayer player;
 
-    ofImage img;
-
-    bool isStreamingGrabber;
 };
