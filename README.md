@@ -1,3 +1,8 @@
+THIS IS NO LONGER SUPPORTED.  SUPERIOR IPVIDEO SERVER FUNCTIONALITY CAN BE FOUND HERE:
+
+https://github.com/bakercp/ofxHTTP
+
+
 ofxIpVideoServer
 ========
 
